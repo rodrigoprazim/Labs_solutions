@@ -1,5 +1,10 @@
 
 
+read -p "Enter BUCKET_NAME: " BUCKET_NAME
+read -p "Enter ZONE: " ZONE
+read -p "Enter VPC_NAME: " VPC_NAME
+read -p "Enter INSTANCE_NAME: " INSTANCE_NAME
+
 gcloud auth list
 
 export REGION="${ZONE%-*}"
